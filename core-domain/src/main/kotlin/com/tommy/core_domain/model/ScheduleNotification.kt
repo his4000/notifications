@@ -8,4 +8,12 @@ data class ScheduleNotification(
     val scheduledAt: ZonedDateTime
 ) {
     val sendType = SendType.SCHEDULE
+
+    fun fail(reason: String): ScheduleNotification {
+        return this.copy(notification = notification.fail(reason))
+    }
+
+    fun schedule(): ScheduleNotification {
+        return this.copy(notification = notification.schedule())
+    }
 }

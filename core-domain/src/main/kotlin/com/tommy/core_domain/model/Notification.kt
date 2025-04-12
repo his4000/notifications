@@ -11,6 +11,25 @@ data class Notification(
     val content: String,
     val recipient: String,
     val sendStatus: SendStatus,
+    val failureReason: String? = null,
     val eventAt: ZonedDateTime,
     val createdAt: ZonedDateTime? = ZonedDateTime.now()
-)
+) {
+    fun fail(reason: String): Notification {
+        check(SendStatus.SENT != sendStatus) {
+            "fail: status must not be SENT: $notificationId"
+        }
+        return this.copy(sendStatus = SendStatus.FAILED, failureReason = reason)
+    }
+
+    fun send(): Notification {
+        return this.copy(sendStatus = SendStatus.SENT, failureReason = null)
+    }
+
+    fun schedule(): Notification {
+        check(SendStatus.PENDING == sendStatus) {
+            "schedule: status must be PENDING: $notificationId"
+        }
+        return this.copy(sendStatus = SendStatus.SCHEDULED)
+    }
+}

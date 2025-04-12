@@ -13,4 +13,12 @@ data class ImmediateNotification(
             "Immediate notification status must not be ${SendStatus.SCHEDULED}: notificationId=${notification.notificationId}"
         }
     }
+
+    fun fail(reason: String): ImmediateNotification {
+        return this.copy(notification = notification.fail(reason))
+    }
+
+    fun send(): ImmediateNotification {
+        return this.copy(notification = notification.send())
+    }
 }
