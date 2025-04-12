@@ -9,7 +9,12 @@ repositories {
     mavenCentral()
 }
 
+val logbackVersion: String by project
+val slf4jVersion: String by project
+
 dependencies {
+    implementation("ch.qos.logback:logback-classic:${logbackVersion}")
+    implementation("org.slf4j:slf4j-api:${slf4jVersion}")
     testImplementation(kotlin("test"))
 }
 
