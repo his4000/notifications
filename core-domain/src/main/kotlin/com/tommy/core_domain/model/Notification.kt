@@ -1,6 +1,7 @@
 package com.tommy.core_domain.model
 
 import com.tommy.core_domain.enums.Channel
+import com.tommy.core_domain.enums.SendStatus
 import java.time.ZonedDateTime
 
 data class Notification(
@@ -9,6 +10,7 @@ data class Notification(
     val title: String,
     val content: String,
     val recipient: String,
+    val sendStatus: SendStatus,
     val eventAt: ZonedDateTime,
     val createdAt: ZonedDateTime? = ZonedDateTime.now()
 )
