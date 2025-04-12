@@ -35,3 +35,9 @@ kotlin {
 tasks.withType<Test> {
     useJUnitPlatform()
 }
+
+subprojects {
+    repositories {
+        mavenCentral()
+    }
+}
