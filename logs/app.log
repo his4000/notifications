@@ -1,0 +1,29 @@
+2025-04-12 11:24:20 - Starting ServerApplicationKt using Java 17.0.1 with PID 20605 (/Users/minsu/IdeaProjects/notifications/server/build/classes/kotlin/main started by minsu in /Users/minsu/IdeaProjects/notifications)
+2025-04-12 11:24:20 - No active profile set, falling back to 1 default profile: "default"
+2025-04-12 11:24:21 - Tomcat initialized with port 8081 (http)
+2025-04-12 11:24:21 - Initializing ProtocolHandler ["http-nio-8081"]
+2025-04-12 11:24:21 - Starting service [Tomcat]
+2025-04-12 11:24:21 - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-12 11:24:21 - Initializing Spring embedded WebApplicationContext
+2025-04-12 11:24:21 - Root WebApplicationContext: initialization completed in 927 ms
+2025-04-12 11:24:22 - Starting ProtocolHandler ["http-nio-8081"]
+2025-04-12 11:24:22 - Tomcat started on port 8081 (http) with context path '/'
+2025-04-12 11:24:22 - Started ServerApplicationKt in 2.183 seconds (process running for 2.881)
+2025-04-12 11:24:26 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-12 11:24:26 - Graceful shutdown complete
+2025-04-12 11:24:58 - Starting ServerApplicationKt using Java 17.0.1 with PID 20637 (/Users/minsu/IdeaProjects/notifications/server/build/classes/kotlin/main started by minsu in /Users/minsu/IdeaProjects/notifications)
+2025-04-12 11:24:58 - No active profile set, falling back to 1 default profile: "default"
+2025-04-12 11:24:59 - Tomcat initialized with port 8081 (http)
+2025-04-12 11:24:59 - Initializing ProtocolHandler ["http-nio-8081"]
+2025-04-12 11:24:59 - Starting service [Tomcat]
+2025-04-12 11:24:59 - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-12 11:24:59 - Initializing Spring embedded WebApplicationContext
+2025-04-12 11:24:59 - Root WebApplicationContext: initialization completed in 856 ms
+2025-04-12 11:24:59 - Starting ProtocolHandler ["http-nio-8081"]
+2025-04-12 11:24:59 - Tomcat started on port 8081 (http) with context path '/'
+2025-04-12 11:24:59 - Started ServerApplicationKt in 2.075 seconds (process running for 2.74)
+2025-04-12 11:25:06 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-12 11:25:06 - Initializing Servlet 'dispatcherServlet'
+2025-04-12 11:25:06 - Completed initialization in 4 ms
+2025-04-12 11:25:09 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-12 11:25:09 - Graceful shutdown complete
