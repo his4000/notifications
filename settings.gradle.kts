@@ -5,3 +5,4 @@ rootProject.name = "notifications"
 
 include("server")
 include("core-domain")
+include("core-adapter")
