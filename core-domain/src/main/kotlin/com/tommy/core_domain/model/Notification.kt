@@ -17,7 +17,6 @@ data class Notification(
     val failureReason: String? = null,
     val sentAt: ZonedDateTime? = null,
     val scheduledAt: ZonedDateTime? = null,
-    val createdAt: ZonedDateTime? = ZonedDateTime.now()
 ) {
     fun fail(reason: String): Notification {
         check(SendStatus.SENT != sendStatus) {
