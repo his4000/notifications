@@ -37,7 +37,15 @@ tasks.withType<Test> {
 }
 
 subprojects {
+    apply(plugin = "io.spring.dependency-management")
+
     repositories {
         mavenCentral()
+    }
+
+    dependencyManagement {
+        imports {
+            mavenBom("org.springframework.cloud:spring-cloud-dependencies:2023.0.4")
+        }
     }
 }

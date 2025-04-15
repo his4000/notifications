@@ -9,10 +9,6 @@ plugins {
 group = "com.tommy"
 version = "0.0.1-SNAPSHOT"
 
-repositories {
-    mavenCentral()
-}
-
 dependencies {
     implementation(project(":core-domain"))
     implementation("org.springframework.boot:spring-boot-starter")
@@ -21,6 +17,7 @@ dependencies {
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+    implementation("org.springframework.cloud:spring-cloud-starter-openfeign")
     testImplementation(kotlin("test"))
 }
 

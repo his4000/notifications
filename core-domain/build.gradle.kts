@@ -5,10 +5,6 @@ plugins {
 group = "com.tommy"
 version = "0.0.1-SNAPSHOT"
 
-repositories {
-    mavenCentral()
-}
-
 val logbackVersion: String by project
 val slf4jVersion: String by project
 
