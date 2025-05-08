@@ -1,0 +1,3 @@
+spring.application.name: core-api
+notification.server:
+  url: app.notification-server.svc.cluster.local # service-name=app, namespace=notification-server

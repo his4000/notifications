@@ -14,16 +14,11 @@ java {
     }
 }
 
-repositories {
-    mavenCentral()
-}
-
 dependencies {
+    implementation(project(":core-adapter"))
+    implementation(project(":core-domain"))
     implementation("org.springframework.boot:spring-boot-starter")
-    implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
-    implementation("org.springframework.boot:spring-boot-starter-logging")
-    implementation("org.slf4j:slf4j-api")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
@@ -40,10 +35,6 @@ tasks.withType<Test> {
 }
 
 tasks.bootJar {
-    enabled = true
-    mainClass.set("com.tommy.server.ServerApplicationKt")
-}
-
-tasks.jar {
-    enabled = true
+    archiveFileName.set("notification-core.jar")
+    mainClass.set("com.tommy.core_api.CoreApiApplicationKt")
 }

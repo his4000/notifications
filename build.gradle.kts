@@ -36,6 +36,14 @@ tasks.withType<Test> {
     useJUnitPlatform()
 }
 
+tasks.bootJar {
+    enabled = false
+}
+
+tasks.jar {
+    enabled = true
+}
+
 subprojects {
     apply(plugin = "io.spring.dependency-management")
 

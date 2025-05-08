@@ -5,11 +5,11 @@ import org.springframework.stereotype.Service
 
 @Service
 class SmsService : NotificationService {
-    val log = LoggerFactory.getLogger(SmsService::class.java)
+    private val log = LoggerFactory.getLogger(SmsService::class.java)
 
     override fun send(notification: Notification) {
-        log.info("### send SMS")
+        log.info("### send SMS to {}: {}", notification.recipient, notification.body)
         Thread.sleep(3000)
-        log.info("### send SMS complete")
+        log.info("### send SMS complete to {}", notification.recipient)
     }
 }
